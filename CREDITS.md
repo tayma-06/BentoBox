@@ -29,7 +29,7 @@ No copyrighted music is shipped or hotlinked. The soundtrack system is built aro
 
 1. **Spotify full tracks (via the Spotify Web Playback SDK)** — when a visitor connects their own Spotify **Premium** account through the audio panel (PKCE OAuth), hovering a card streams the movie’s original song directly from Spotify via `spotify.trackUri`. No audio passes through or is stored by this site; the SDK only controls playback on the visitor’s own Spotify session.
 2. **Official 30-second OST previews (Apple iTunes Search API)** — the guest fallback. When soundtrack mode is on, hovering a movie queries the Apple iTunes Search API and streams Apple’s official 30-second `previewUrl` for a matching track (e.g. “Remember Me” for *Coco*). Only Apple’s official preview endpoint is used; the audio is streamed, never downloaded or copied, and the mini-player links back to Apple as the source. Availability depends on the track being on Apple Music.
-3. **Optional lo-fi jazz ambience** — generated at runtime through the same shared audio engine.
+3. **Optional background jazz** — a real jazz standard (e.g. “Take Five” by The Dave Brubeck Quartet), streamed as Apple’s official 30-second preview through the same shared audio engine; nothing is downloaded.
 
 To add a real local clip for a movie, see **section 13 (How Soundtrack Playback Works)** of the README. Only use music you have the rights to distribute.
 

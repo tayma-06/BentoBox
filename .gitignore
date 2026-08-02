@@ -7,3 +7,5 @@ npm-debug.log*
 # Licensed/preview audio is never committed.
 public/assets/audio/soundtracks/*
 !public/assets/audio/soundtracks/.gitkeep
+
+.vercel

@@ -5,7 +5,7 @@
      BentoBox soundtrack manager
      ============================================================
      One shared Web Audio graph, one master gain, an optional
-     ambience bus (jazz lo-fi, driven by audio.js) and a preview
+     ambience bus (real jazz, driven by audio.js) and a preview
      bus (movie cues). Cues resolve in three levels:
 
        Level 1  local, properly licensed clip (available:false
