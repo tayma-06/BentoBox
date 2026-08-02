@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BentoBox — My Favorite Animation Universe</title>
+  <meta name="description" content="The most random thing I built in the most random time. A bento-box gallery of my favorite animated movies, built with vanilla JS, Express, and a little movie magic.">
+  <meta name="theme-color" content="#0b1026">
+  <meta property="og:title" content="BentoBox — My Favorite Animation Universe">
+  <meta property="og:description" content="The most random thing I built in the most random time.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 6l9 27 28 9-28 9-9 27-9-27-28-9 28-9z' fill='%23ffd75e'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito+Sans:wght@400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-glow bg-glow-3"></div>
+    <div class="bg-blob bg-blob-1"></div>
+    <div class="bg-blob bg-blob-2"></div>
+    <div class="bg-halftone"></div>
+    <div class="bg-motion-lines"></div>
+    <div class="bg-grain"></div>
+    <span class="particle particle-1"></span>
+    <span class="particle particle-2"></span>
+    <span class="particle particle-3"></span>
+    <span class="particle particle-4"></span>
+    <span class="particle particle-5"></span>
+    <span class="particle particle-6"></span>
+    <span class="particle particle-7"></span>
+    <span class="particle particle-8"></span>
+    <span class="particle particle-9"></span>
+    <span class="particle particle-10"></span>
+  </div>
+
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="nav-logo" href="#top"><span class="nav-logo-star" aria-hidden="true">✦</span> BentoBox</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#favorites">Favorites</a>
+        <a class="nav-link" href="#about">About</a>
+        <span class="nav-count" id="nav-count" role="status" aria-label="Movies in collection">—</span>
+        <button id="music-toggle" class="icon-btn" type="button" aria-label="Open audio panel" aria-pressed="false" title="Audio &amp; sound">
+          <span class="icon-btn-label" aria-hidden="true">♪</span>
+        </button>
+        <button id="aura-toggle" class="icon-btn" type="button" aria-label="Toggle ambient aura" aria-pressed="true" title="Ambient aura">
+          <span class="icon-btn-label" aria-hidden="true">✦</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-bento">
+        <div class="hero-copy reveal-section">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> MY RANDOM WEBSITE</p>
+          <h1 id="hero-title">WHY THIS WEBSITE?<span class="hl hl-yellow">DUNNO</span></h1>
+          <p class="hero-sub">A random little bento of the animated worlds I keep going back to — for courage, comfort, imagination, and the occasional dragon.</p>
+          <a class="btn btn-primary" href="#favorites">
+            Explore my favorites
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <p class="hero-tag">The most random thing I built in the most random time.</p>
+        </div>
+
+        <div class="hero-visual-card reveal-section" role="img" aria-label="Featured favorite movie backdrop">
+          <div class="hero-visual-frame">
+            <img id="hero-visual" src="/assets/images/placeholders/wreck-it-ralph-2012.svg" alt="" decoding="async">
+            <span class="hero-visual-sticker" id="hero-pick-label">2012 · Animation</span>
+          </div>
+          <div class="speech-bubble speech-bubble-hero">
+            <span class="sb-text">That one film that started it all <span class="sb-heart" aria-hidden="true">♥</span></span>
+          </div>
+        </div>
+
+        <div class="hero-count-card reveal-section">
+          <span class="hero-count-number" id="hero-count">—</span>
+          <span class="hero-count-label">favorite worlds<br>in this box</span>
+        </div>
+
+        <div class="hero-sparkles" aria-hidden="true">
+          <span class="sparkle sp-1">✦</span>
+          <span class="sparkle sp-2">✧</span>
+          <span class="sparkle sp-3">✦</span>
+          <span class="sparkle sp-4">✧</span>
+          <span class="sparkle sp-5">✦</span>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#favorites">
+        <span class="scroll-hint-text">scroll to explore</span>
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="favorites" id="favorites" aria-labelledby="favorites-title">
+      <div class="section-head reveal-section">
+        <span class="panel-label">01 · THE GOOD STUFF</span>
+        <h2 id="favorites-title">My Forever Favorites</h2>
+        <p class="section-sub">Eighteen animated worlds, one very random bento box.</p>
+      </div>
+
+      <form class="filters reveal-section" id="filters-form" role="search" aria-label="Filter and sort the collection">
+        <div class="filter-group">
+          <label class="sr-only" for="search-input">Search movies by title</label>
+          <input id="search-input" type="search" placeholder="Search movies…" autocomplete="off">
+        </div>
+        <div class="filter-group">
+          <label class="sr-only" for="genre-select">Filter by genre</label>
+          <select id="genre-select">
+            <option value="all">All genres</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="sr-only" for="sort-select">Sort movies</label>
+          <select id="sort-select">
+            <option value="collection">My order</option>
+            <option value="title-asc">Title A–Z</option>
+            <option value="year-asc">Oldest first</option>
+            <option value="year-desc">Newest first</option>
+            <option value="rating-desc">Top rated</option>
+          </select>
+        </div>
+        <button class="btn btn-ghost" id="reset-filters" type="button">Reset</button>
+      </form>
+
+      <p id="results-status" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+
+      <div id="progress-strip" class="progress-strip" aria-label="Collection progress">
+        <span class="progress-item"><strong id="ps-count">—</strong>&nbsp;films</span>
+        <span class="progress-sep" aria-hidden="true">✦</span>
+        <span class="progress-item"><strong id="ps-worlds">—</strong>&nbsp;worlds</span>
+        <span class="progress-sep" aria-hidden="true">✦</span>
+        <span class="progress-item">runtime&nbsp;<strong id="ps-runtime">—</strong></span>
+        <span class="progress-sep" aria-hidden="true">✦</span>
+        <span class="progress-item">now:&nbsp;<span id="ps-active" class="progress-active">—</span></span>
+        <span class="progress-sep" aria-hidden="true">✦</span>
+        <span class="progress-item">filter:&nbsp;<span id="ps-filter">all</span></span>
+      </div>
+
+      <div id="error-area" class="error-area" role="alert" hidden>
+        <span class="error-emoji" aria-hidden="true">◉_◉</span>
+        <p class="error-msg">Something went wrong while loading the collection.</p>
+        <button class="btn btn-primary" id="retry-button" type="button">Try again</button>
+      </div>
+
+      <div class="movie-bento" id="movie-grid">
+      </div>
+
+      <div id="grid-empty" class="grid-empty" hidden>
+        <span class="grid-empty-art" aria-hidden="true">(╥﹏╥)</span>
+        <h3 class="grid-empty-title">No movies found</h3>
+        <p class="grid-empty-text">Nothing in this box matches — try clearing your filters.</p>
+        <button class="btn btn-ghost" id="empty-reset" type="button">Show everything</button>
+      </div>
+    </section>
+
+    <section class="why reveal-section" id="why" aria-labelledby="why-title">
+      <div class="section-head">
+        <span class="panel-label">02 · WHY ANIMATION</span>
+        <h2 id="why-title">Why this world means something to me</h2>
+      </div>
+      <div class="why-grid">
+        <article class="why-card why-courage">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <h3>Courage</h3>
+          <p>Animated heroes stumble, get up, and try again — and somehow that makes everything feel possible.</p>
+        </article>
+        <article class="why-card why-comfort">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21C7 17 3.5 13.6 3.5 9.6 3.5 6.7 5.8 4.5 8.6 4.5c1.3 0 2.5.6 3.4 1.5a4.5 4.5 0 0 1 3.4-1.5c2.8 0 5.1 2.2 5.1 5.1 0 4-3.5 7.4-8.5 11.4z"/></svg>
+          </span>
+          <h3>Comfort</h3>
+          <p>When real life gets loud, these worlds are a quiet place to land — warm light, soft edges, familiar faces.</p>
+        </article>
+        <article class="why-card why-imagination">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 0 1 5 5c0 2-.8 3-2 4v2H9v-2c-1.2-1-2-2-2-4a5 5 0 0 1 5-5z"/><path d="M9 17h6M10 20h4"/></svg>
+          </span>
+          <h3>Imagination</h3>
+          <p>Hand-drawn or rendered, they prove that ideas can build whole universes out of nothing.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="stats reveal-section" id="stats" aria-labelledby="stats-title">
+      <div class="section-head">
+        <span class="panel-label">03 · THE NUMBERS</span>
+        <h2 id="stats-title">Collection stats</h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-tile stat-count">
+          <span class="stat-value" id="stat-count">—</span>
+          <span class="stat-label">favorite worlds</span>
+        </div>
+        <div class="stat-tile stat-years">
+          <span class="stat-value" id="stat-years">—</span>
+          <span class="stat-label">years spanned</span>
+        </div>
+        <div class="stat-tile stat-runtime" id="stat-runtime-tile" hidden>
+          <span class="stat-value" id="stat-runtime">—</span>
+          <span class="stat-label">total runtime</span>
+        </div>
+        <div class="stat-tile stat-rating" id="stat-rating-tile" hidden>
+          <span class="stat-value" id="stat-rating">—</span>
+          <span class="stat-label">avg TMDB rating</span>
+        </div>
+        <div class="stat-tile stat-tag">
+          <span class="stat-value stat-tag-value">100%</span>
+          <span class="stat-label">animated, 0% regrets</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about reveal-section" id="about" aria-labelledby="about-title">
+      <div class="about-bento">
+        <div class="about-main">
+          <span class="panel-label">04 · CREDITS &amp; ABOUT</span>
+          <h2 id="about-title">About this little box</h2>
+          <p><strong>BentoBox</strong> is a personal, hand-built fan corner — “the most random thing I built in the most random time.” Every card is a movie I love, presented in a bento layout with a webtoon-inspired aura: comic panels, halftone dots, speech bubbles, ink borders, and soft glowing light.</p>
+          <p>Movie information and artwork come from the TMDB API when a token is configured. Without one, the site runs on fallback data and original placeholder art.</p>
+          <ul class="about-list">
+            <li>Personal notes are editable — just change the <code>personalNote</code> field in <code>data/movies.json</code>.</li>
+            <li>Soundtrack mode plays each movie's original song on hover — full tracks via the Spotify Web Playback SDK when you connect a premium account, with official 30-second Apple Music previews as the guest fallback. Plus an optional lo-fi jazz ambience. Nothing is downloaded.</li>
+            <li>The interface and artwork system are original.</li>
+          </ul>
+          <p class="tmdb-notice">This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+          <a class="btn btn-ghost" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">Visit TMDB <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-speech speech-bubble">
+          <span class="sb-text">Thanks for scrolling this far.<br><strong>You’re my favorite.</strong></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-tag">Built with pixels, memories, and a little movie magic.</p>
+    <p class="footer-sub">BentoBox · the most random thing I built in the most random time · <a href="#favorites">back to the movies ↑</a></p>
+  </footer>
+
+  <div id="hover-preview" class="hover-preview" role="tooltip" hidden></div>
+
+  <dialog id="movie-modal" class="movie-modal" aria-labelledby="modal-title">
+    <div class="modal-shell" role="document">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close details">✕</button>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </dialog>
+
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+  </div>
+  <div class="sparkle-layer" id="sparkle-layer" aria-hidden="true"></div>
+
+  <aside id="audio-panel" class="audio-panel" aria-label="Audio controls" aria-hidden="true" hidden>
+    <div class="audio-panel-header">
+      <h2 class="audio-panel-title">Audio &amp; Sound</h2>
+      <button id="audio-panel-close" class="icon-btn" type="button" aria-label="Close audio panel">✕</button>
+    </div>
+    <div class="audio-panel-body">
+      <div class="audio-option">
+        <div class="audio-option-copy">
+          <strong>Soundtrack mode</strong>
+          <span>Full original songs on hover, with official previews as fallback</span>
+        </div>
+        <button id="soundtrack-mode-btn" class="btn btn-primary btn-soundtrack" type="button" aria-pressed="false">
+          <span class="btn-soundtrack-text">Enable Soundtrack Mode</span>
+        </button>
+      </div>
+
+      <div class="audio-option" id="spotify-option">
+        <div class="audio-option-copy">
+          <strong>Spotify</strong>
+          <span id="spotify-status">Connect to play full songs</span>
+        </div>
+        <button id="spotify-toggle" class="btn btn-ghost" type="button" aria-pressed="false">Connect</button>
+      </div>
+
+      <div class="audio-option">
+        <div class="audio-option-copy">
+          <strong>Background jazz</strong>
+          <span>Original lo-fi ambience</span>
+        </div>
+        <button id="ambience-toggle" class="audio-switch" type="button" role="switch" aria-checked="false" aria-label="Toggle background jazz">
+          <span class="audio-switch-track" aria-hidden="true"><span class="audio-switch-thumb"></span></span>
+          <span class="audio-switch-text" data-label>Off</span>
+        </button>
+      </div>
+
+      <div class="audio-option audio-option-volume">
+        <label for="master-volume-slider">Master volume</label>
+        <div class="volume-row">
+          <input id="master-volume-slider" type="range" min="0" max="100" value="48" data-volume-slider="master" aria-label="Master volume">
+          <button id="master-mute" class="icon-btn" type="button" data-mute-button="master" aria-pressed="false" aria-label="Mute master audio">♪</button>
+        </div>
+      </div>
+
+      <p class="audio-panel-note">Hover, tap, or focus a movie card to hear its song. With Spotify connected, full original songs play through the Spotify Web Playback SDK; otherwise official 30-second previews stream from Apple Music. Nothing is downloaded.</p>
+    </div>
+  </aside>
+
+  <div id="mini-player" class="mini-player" aria-live="polite" hidden>
+    <span class="mini-now">NOW PLAYING</span>
+    <div class="mini-copy">
+      <span id="mini-title" class="mini-title">Hover a movie to preview</span>
+      <span id="mini-movie" class="mini-movie">Soundtrack mode is on</span>
+      <span id="mini-composer" class="mini-composer">Full original songs via Spotify, or official previews</span>
+      <span class="mini-row">
+        <span id="mini-label" class="mini-label">STANDBY</span>
+        <a id="mini-source" class="mini-source" target="_blank" rel="noopener noreferrer" hidden>Listen at source ↗</a>
+      </span>
+    </div>
+    <div class="mini-actions">
+      <button id="mini-play" class="mini-btn" type="button" aria-pressed="false" aria-label="Pause soundtrack">❚❚</button>
+      <button id="mini-off" class="mini-btn" type="button" aria-label="Turn off soundtrack mode">✕</button>
+    </div>
+  </div>
+
+  <p id="audio-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+
+  <noscript>
+    <div class="noscript">
+      <p><strong>JavaScript is required</strong> to explore the interactive BentoBox collection.</p>
+      <p>Please enable JavaScript (or use a modern browser) and reload the page.</p>
+    </div>
+  </noscript>
+
+  <script src="cursor.js" defer></script>
+  <script src="spotify.js" defer></script>
+  <script src="soundtrack.js" defer></script>
+  <script src="audio.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

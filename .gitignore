@@ -1,0 +1,9 @@
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+.vercel/
+
+# Licensed/preview audio is never committed.
+public/assets/audio/soundtracks/*
+!public/assets/audio/soundtracks/.gitkeep

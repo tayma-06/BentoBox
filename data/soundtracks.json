@@ -1,0 +1,488 @@
+[
+  {
+    "movieSlug": "wreck-it-ralph-2012",
+    "trackTitle": "When Can I See You Again?",
+    "composer": "Owl City",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/wreck-it-ralph-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "when can i see you again owl city",
+      "preferredTrack": "When Can I See You Again",
+      "preferredCollection": "Wreck-It Ralph"
+    },
+    "spotify": {
+      "term": "when can i see you again owl city",
+      "preferredTrack": "When Can I See You Again?",
+      "trackName": "When Can I See You Again? - From \"Wreck-It Ralph\"/Soundtrack Version",
+      "artistName": "Owl City",
+      "trackUri": "spotify:track:5ZkAx8zjLiSs1nMmBwJoZS",
+      "externalUrl": "https://open.spotify.com/track/5ZkAx8zjLiSs1nMmBwJoZS"
+    }
+  },
+  {
+    "movieSlug": "ralph-breaks-the-internet-2018",
+    "trackTitle": "Zero",
+    "composer": "Imagine Dragons",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/ralph-breaks-the-internet-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "ralph breaks the internet zero imagine dragons",
+      "preferredTrack": "Zero",
+      "preferredCollection": "Ralph Breaks the Internet"
+    },
+    "spotify": {
+      "term": "zero imagine dragons ralph breaks the internet",
+      "preferredTrack": "Zero",
+      "trackName": "Zero - From the Original Motion Picture \"Ralph Breaks The Internet\"",
+      "artistName": "Imagine Dragons",
+      "trackUri": "spotify:track:2bzitsPcImYC6DZWvvLCQi",
+      "externalUrl": "https://open.spotify.com/track/2bzitsPcImYC6DZWvvLCQi"
+    }
+  },
+  {
+    "movieSlug": "big-hero-6-2014",
+    "trackTitle": "Immortals",
+    "composer": "Fall Out Boy",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/big-hero-6-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "big hero 6 immortals fall out boy",
+      "preferredTrack": "Immortals",
+      "preferredCollection": "Big Hero 6"
+    },
+    "spotify": {
+      "term": "immortals fall out boy big hero 6",
+      "preferredTrack": "Immortals",
+      "trackName": "Immortals",
+      "artistName": "Fall Out Boy",
+      "trackUri": "spotify:track:3Te8uLyit6X3ncNW8Fp3K2",
+      "externalUrl": "https://open.spotify.com/track/3Te8uLyit6X3ncNW8Fp3K2"
+    }
+  },
+  {
+    "movieSlug": "coco-2017",
+    "trackTitle": "Remember Me",
+    "composer": "Coco OST",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/coco-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "coco remember me",
+      "preferredTrack": "Remember Me",
+      "preferredCollection": "Coco"
+    },
+    "spotify": {
+      "term": "remember me benjamin bratt coco",
+      "preferredTrack": "Remember Me",
+      "trackName": "Remember Me (Ernesto de la Cruz)",
+      "artistName": "Benjamin Bratt",
+      "trackUri": "spotify:track:4ljlAxfaEjO4Q4g9FMtVj4",
+      "externalUrl": "https://open.spotify.com/track/4ljlAxfaEjO4Q4g9FMtVj4"
+    }
+  },
+  {
+    "movieSlug": "how-to-train-your-dragon-2010",
+    "trackTitle": "Test Drive",
+    "composer": "John Powell",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/how-to-train-your-dragon-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "test drive john powell",
+      "preferredTrack": "Test Drive",
+      "preferredCollection": "How To Train Your Dragon"
+    },
+    "spotify": {
+      "term": "test drive john powell how to train your dragon",
+      "preferredTrack": "Test Drive",
+      "trackName": "Test Drive - From How To Train Your Dragon Music From The Motion Picture",
+      "artistName": "John Powell",
+      "trackUri": "spotify:track:2QTDuJIGKUjR7E2Q6KupIh",
+      "externalUrl": "https://open.spotify.com/track/2QTDuJIGKUjR7E2Q6KupIh"
+    }
+  },
+  {
+    "movieSlug": "how-to-train-your-dragon-2-2014",
+    "trackTitle": "For the Dancing and the Dreaming",
+    "composer": "Gerard Butler, Craig Ferguson & Mary Jane Wells",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/how-to-train-your-dragon-2-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "how to train your dragon 2 for the dancing and the dreaming",
+      "preferredTrack": "Dancing and the Dreaming",
+      "preferredCollection": "How To Train Your Dragon 2"
+    },
+    "spotify": {
+      "term": "for the dancing and the dreaming how to train your dragon 2",
+      "preferredTrack": "For the Dancing and the Dreaming",
+      "trackName": "For the Dancing and the Dreaming",
+      "artistName": "John Powell, Jon Thor Birgisson, Gerard Butler, Craig Ferguson, Mary Jane Wells",
+      "trackUri": "spotify:track:6tQa9SU9Bzs5y5zfctqOki",
+      "externalUrl": "https://open.spotify.com/track/6tQa9SU9Bzs5y5zfctqOki"
+    }
+  },
+  {
+    "movieSlug": "the-mitchells-vs-the-machines-2021",
+    "trackTitle": "Raining Tacos",
+    "composer": "Parry Gripp",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/the-mitchells-vs-the-machines-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "raining tacos parry gripp",
+      "preferredTrack": "Raining Tacos",
+      "preferredCollection": "Raining Tacos"
+    },
+    "spotify": {
+      "term": "raining tacos parry gripp",
+      "preferredTrack": "Raining Tacos",
+      "trackName": "Raining Tacos",
+      "artistName": "Parry Gripp",
+      "trackUri": "spotify:track:01apQz7E72krU1k1b4VWs7",
+      "externalUrl": "https://open.spotify.com/track/01apQz7E72krU1k1b4VWs7"
+    }
+  },
+  {
+    "movieSlug": "klaus-2019",
+    "trackTitle": "The Legend of Klaus (Suite)",
+    "composer": "Alfonso G. Aguilar",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/klaus-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "alfonso aguilar klaus",
+      "preferredTrack": "The Legend of Klaus",
+      "preferredCollection": "Klaus"
+    },
+    "spotify": {
+      "term": "the legend of klaus alfonso aguilar",
+      "preferredTrack": "The Legend of Klaus (Suite)",
+      "trackName": "The Legend of Klaus - Suite",
+      "artistName": "Alfonso G. Aguilar",
+      "trackUri": "spotify:track:5yYyAoNRMbUA4DLmrI8nTZ",
+      "externalUrl": "https://open.spotify.com/track/5yYyAoNRMbUA4DLmrI8nTZ"
+    }
+  },
+  {
+    "movieSlug": "spider-man-into-the-spider-verse-2018",
+    "trackTitle": "What's Up Danger",
+    "composer": "Blackway & Black Caviar",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/spider-man-into-the-spider-verse-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "spider verse what up danger",
+      "preferredTrack": "What's Up Danger",
+      "preferredCollection": "Spider-Verse"
+    },
+    "spotify": {
+      "term": "whats up danger blackway black caviar",
+      "preferredTrack": "What's Up Danger",
+      "trackName": "What's Up Danger",
+      "artistName": "Blackway, Black Caviar",
+      "trackUri": "spotify:track:7rSMW9fnuTLV3Q1brMKlmg",
+      "externalUrl": "https://open.spotify.com/track/7rSMW9fnuTLV3Q1brMKlmg"
+    }
+  },
+  {
+    "movieSlug": "wall-e-2008",
+    "trackTitle": "Put On Your Sunday Clothes",
+    "composer": "Hello, Dolly! Cast",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/wall-e-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "wall e put on your sunday clothes",
+      "preferredTrack": "Sunday Clothes",
+      "preferredCollection": "WALL-E"
+    },
+    "spotify": {
+      "term": "put on your sunday clothes wall e",
+      "preferredTrack": "Put On Your Sunday Clothes",
+      "trackName": "Put On Your Sunday Clothes",
+      "artistName": "Jerry Herman, Michael Crawford, Barbra Streisand, Ernest Lehman, Lionel Newman",
+      "trackUri": "spotify:track:1IWR45a70faZVTduyIRpG9",
+      "externalUrl": "https://open.spotify.com/track/1IWR45a70faZVTduyIRpG9"
+    }
+  },
+  {
+    "movieSlug": "inside-out-2015",
+    "trackTitle": "Bundle of Joy",
+    "composer": "Michael Giacchino",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/inside-out-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "inside out bundle of joy",
+      "preferredTrack": "Bundle of Joy",
+      "preferredCollection": "Inside Out"
+    },
+    "spotify": {
+      "term": "bundle of joy michael giacchino inside out",
+      "preferredTrack": "Bundle of Joy",
+      "trackName": "Bundle of Joy",
+      "artistName": "Michael Giacchino",
+      "trackUri": "spotify:track:3eTgg18rKBD30Hef1gv0wz",
+      "externalUrl": "https://open.spotify.com/track/3eTgg18rKBD30Hef1gv0wz"
+    }
+  },
+  {
+    "movieSlug": "ratatouille-2007",
+    "trackTitle": "Le Festin",
+    "composer": "Camille & Michael Giacchino",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/ratatouille-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "ratatouille le festin",
+      "preferredTrack": "Le Festin",
+      "preferredCollection": "Ratatouille"
+    },
+    "spotify": {
+      "term": "le festin camille michael giacchino ratatouille",
+      "preferredTrack": "Le Festin",
+      "trackName": "Le Festin",
+      "artistName": "Camille, Michael Giacchino",
+      "trackUri": "spotify:track:02JIdsrod3BYucThfUFDUX",
+      "externalUrl": "https://open.spotify.com/track/02JIdsrod3BYucThfUFDUX"
+    }
+  },
+  {
+    "movieSlug": "the-powerpuff-girls-movie-2002",
+    "trackTitle": "Signal In the Sky (Let's Go)",
+    "composer": "The Apples in Stereo",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/the-powerpuff-girls-movie-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "signal in the sky apples in stereo",
+      "preferredTrack": "Signal In the Sky",
+      "preferredCollection": "Powerpuff"
+    },
+    "spotify": {
+      "term": "signal in the sky apples in stereo",
+      "preferredTrack": "Signal In the Sky (Let's Go)",
+      "trackName": "Signal in the Sky (Let's Go)",
+      "artistName": "The Apples In Stereo",
+      "trackUri": "spotify:track:2ccLpouOs56EE8TOIVtwuu",
+      "externalUrl": "https://open.spotify.com/track/2ccLpouOs56EE8TOIVtwuu"
+    }
+  },
+  {
+    "movieSlug": "how-to-train-your-dragon-the-hidden-world-2019",
+    "trackTitle": "Together from Afar",
+    "composer": "Jónsi",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/how-to-train-your-dragon-the-hidden-world-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "how to train your dragon the hidden world together from afar",
+      "preferredTrack": "Together from Afar",
+      "preferredCollection": "The Hidden World"
+    },
+    "spotify": {
+      "term": "together from afar jonsi hidden world",
+      "preferredTrack": "Together from Afar",
+      "trackName": "Together from Afar (How To Train Your Dragon: The Hidden World)",
+      "artistName": "Jónsi",
+      "trackUri": "spotify:track:6YIcIcBKHoWpz5Jm7TLNPL",
+      "externalUrl": "https://open.spotify.com/track/6YIcIcBKHoWpz5Jm7TLNPL"
+    }
+  },
+  {
+    "movieSlug": "the-secret-life-of-pets-2016",
+    "trackTitle": "We Go Together",
+    "composer": "The Sausage Factory Singers",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/the-secret-life-of-pets-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "we go together sausage factory secret life of pets",
+      "preferredTrack": "We Go Together",
+      "preferredCollection": "The Secret Life of Pets"
+    },
+    "spotify": {
+      "term": "we go together sausage factory secret life of pets",
+      "preferredTrack": "We Go Together",
+      "trackName": "We Go Together",
+      "artistName": "The Sausage Factory Singers",
+      "trackUri": "spotify:track:46wRVsmiyO8ephW0wbKtjZ",
+      "externalUrl": "https://open.spotify.com/track/46wRVsmiyO8ephW0wbKtjZ"
+    }
+  },
+  {
+    "movieSlug": "monsters-inc-2001",
+    "trackTitle": "If I Didn't Have You",
+    "composer": "Billy Crystal & John Goodman",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/monsters-inc-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "if i didnt have you billy crystal john goodman",
+      "preferredTrack": "If I Didn't Have You",
+      "preferredCollection": "Monsters, Inc."
+    },
+    "spotify": {
+      "term": "if i didnt have you billy crystal john goodman",
+      "preferredTrack": "If I Didn't Have You",
+      "trackName": "If I Didn't Have You",
+      "artistName": "Billy Crystal, John Goodman",
+      "trackUri": "spotify:track:7xf3S6Bv8hDqOtevZou602",
+      "externalUrl": "https://open.spotify.com/track/7xf3S6Bv8hDqOtevZou602"
+    }
+  },
+  {
+    "movieSlug": "encanto-2021",
+    "trackTitle": "We Don't Talk About Bruno",
+    "composer": "Encanto Cast",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/encanto-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "we dont talk about bruno encanto",
+      "preferredTrack": "We Don't Talk About Bruno",
+      "preferredCollection": "Encanto"
+    },
+    "spotify": {
+      "term": "we dont talk about bruno encanto cast",
+      "preferredTrack": "We Don't Talk About Bruno",
+      "trackName": "We Don't Talk About Bruno",
+      "artistName": "Carolina Gaitán - La Gaita, Mauro Castillo, Adassa, Rhenzy Feliz, Diane Guerrero, Stephanie Beatriz, Encanto - Cast",
+      "trackUri": "spotify:track:52xJxFP6TqMuO4Yt0eOkMz",
+      "externalUrl": "https://open.spotify.com/track/52xJxFP6TqMuO4Yt0eOkMz"
+    }
+  },
+  {
+    "movieSlug": "frozen-2013",
+    "trackTitle": "Let It Go",
+    "composer": "Idina Menzel",
+    "sourceType": "stream",
+    "audioPath": "/assets/audio/soundtracks/frozen-preview.mp3",
+    "previewUrl": null,
+    "storeUrl": null,
+    "attribution": null,
+    "licenseNote": "Full original song streams via the Spotify Web Playback SDK when authorized; otherwise the official 30-second preview streams via the Apple iTunes Search API. Nothing is downloaded.",
+    "startAt": 0,
+    "previewDuration": 30,
+    "available": false,
+    "itunes": {
+      "term": "let it go idina menzel",
+      "preferredTrack": "Let It Go",
+      "preferredCollection": "Frozen"
+    },
+    "spotify": {
+      "term": "let it go idina menzel frozen",
+      "preferredTrack": "Let It Go",
+      "trackName": "Let It Go - From \"Frozen\"/Soundtrack Version",
+      "artistName": "Idina Menzel",
+      "trackUri": "spotify:track:0qcr5FMsEO85NAQjrlDRKo",
+      "externalUrl": "https://open.spotify.com/track/0qcr5FMsEO85NAQjrlDRKo"
+    }
+  }
+]

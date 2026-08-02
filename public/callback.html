@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connecting BentoBox to Spotify…</title>
+  <meta name="robots" content="noindex">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: 'Nunito Sans', Arial, sans-serif;
+      background: #0b1026;
+      color: #fff7e8;
+    }
+    .card {
+      text-align: center;
+      padding: 2.5rem;
+      border: 3px solid #12101c;
+      border-radius: 18px;
+      background: #1b2038;
+      box-shadow: 4px 4px 0 #12101c;
+    }
+    .card strong {
+      display: block;
+      font-family: 'Bangers', 'Comic Sans MS', cursive;
+      font-size: 1.6rem;
+      letter-spacing: 0.06em;
+      color: #ffd75e;
+    }
+    .card p {
+      margin: 0.6rem 0 0;
+      color: #a9adc4;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <strong>Connecting to Spotify…</strong>
+    <p>This should only take a second.</p>
+  </div>
+  <script>
+    (() => {
+      'use strict';
+
+      const AUTH_KEY = 'bentobox-spotify-auth';
+      const VERIFIER_KEY = 'bentobox-spotify-verifier';
+      const STATE_KEY = 'bentobox-spotify-state';
+      const TOKEN_URL = 'https://accounts.spotify.com/api/token';
+      const HOME = '/?spotify=connected';
+      const FAIL = '/?spotify=error';
+
+      function fail() {
+        window.location.replace(FAIL);
+      }
+
+      (async () => {
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        const state = params.get('state');
+        const error = params.get('error');
+
+        let verifier = null;
+        let expectedState = null;
+        try {
+          verifier = sessionStorage.getItem(VERIFIER_KEY);
+          expectedState = sessionStorage.getItem(STATE_KEY);
+        } catch {
+          /* ignore */
+        }
+
+        if (error || !code || !state || state !== expectedState) {
+          fail();
+          return;
+        }
+
+        let clientId = '';
+        let redirectUri = '';
+        try {
+          const res = await fetch('/api/spotify/config');
+          const cfg = res.ok ? await res.json() : {};
+          clientId = cfg.clientId || '';
+          redirectUri = cfg.redirectUri || '';
+        } catch {
+          fail();
+          return;
+        }
+
+        try {
+          const body = new URLSearchParams({
+            client_id: clientId,
+            grant_type: 'authorization_code',
+            code,
+            redirect_uri: redirectUri,
+            code_verifier: verifier,
+          });
+          const res = await fetch(TOKEN_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body,
+          });
+          const json = await res.json();
+          if (!res.ok || !json.access_token) {
+            fail();
+            return;
+          }
+          const auth = {
+            access_token: json.access_token,
+            refresh_token: json.refresh_token || '',
+            expires_at: Date.now() + json.expires_in * 1000,
+          };
+          try {
+            localStorage.setItem(AUTH_KEY, JSON.stringify(auth));
+          } catch {
+            fail();
+            return;
+          }
+          window.location.replace(HOME);
+        } catch {
+          fail();
+        }
+      })();
+    })();
+  </script>
+</body>
+</html>
